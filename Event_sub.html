@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!--Nav Bar-->
+
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Campus Connect</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+       <ul class="navbar-nav">
+         <li class="nav-item">
+           <a class="nav-link" href="index.html">Home</a>
+         </li>
+          <li class="nav-item">
+            <a class="nav-link" href="form.html">Event Submission</a>
+          </li>
+       </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!--Form-->
+
+
+<div class="container">
+  <header class="mb-4">
+    <h1 class="text-center">Event Submission</h1>
+  </header>
+
+
+  <form action="/submit" method="post">
+    <div class="mb-3">
+      <label for="eventName" class="form-label">Event Name:</label>
+      <input type="text" class="form-control" id="eventName" name="eventName" required>
+    </div>
+
+
+    <div class="row">
+      <div class="mb-3 col-md-6">
+        <label for="eventDate" class="form-label">Date:</label>
+        <input type="date" class="form-control" id="eventDate" name="eventDate" required>
+      </div>
+      <div class="mb-3 col-md-6">
+        <label for="eventTime" class="form-label">Time:</label>
+        <input type="time" class="form-control" id="eventTime" name="eventTime">
+      </div>
+    </div>
+
+
+    <div class="mb-3">
+      <label for="location" class="form-label">Location:</label>
+      <input type="text" class="form-control" id="location" name="location">
+    </div>
+
+
+    <div class="mb-3">
+      <label class="form-label">Is this event open to all students?</label>
+      <div class="d-flex align-items-center">
+        <div class="form-check me-3">
+          <input type="radio" class="form-check-input" id="yes" name="openToAll" value="yes" required>
+          <label class="form-check-label" for="yes">Yes</label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="no" name="openToAll" value="no">
+          <label class="form-check-label" for="no">No</label>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="mb-3">
+      <label class="form-label">What type of event is this? (Select all that apply)</label>
+      <div class="d-flex align-items-center flex-wrap">
+        <div class="form-check me-3">
+          <input type="checkbox" class="form-check-input" id="workshop" name="eventType" value="workshop">
+          <label class="form-check-label" for="workshop">Workshop</label>
+        </div>
+        <div class="form-check me-3">
+          <input type="checkbox" class="form-check-input" id="social" name="eventType" value="social">
+          <label class="form-check-label" for="social">Social</label>
+        </div>
+        <div class="form-check me-3">
+          <input type="checkbox" class="form-check-input" id="sports" name="eventType" value="sports">
+          <label class="form-check-label" for="sports">Sports</label>
+        </div>
+        <div class="form-check me-3">
+          <input type="checkbox" class="form-check-input" id="academic" name="eventType" value="academic">
+          <label class="form-check-label" for="academic">Academic</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="other" name="eventType" value="other">
+          <label class="form-check-label" for="other">Other</label>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="mb-3">
+      <label for="department" class="form-label">Select the department hosting the event:</label>
+      <select id="department" name="department" class="form-select" required>
+        <option value="">--Please choose an option--</option>
+        <option value="CEN">CEN</option>
+        <option value="SBA">SBA</option>
+        <option value="CAS">CAS</option>
+        <option value="CAAD">CAAD</option>
+        <option value="OSA">OSA</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+
+    <div class="mb-3">
+      <label for="description" class="form-label">Description:</label>
+      <textarea id="description" name="description" class="form-control" rows="4"></textarea>
+    </div>
+
+
+    <div class="mb-3">
+      <label for="organizerName" class="form-label">Organizer Name:</label>
+      <input type="text" class="form-control" id="organizerName" name="organizerName" required>
+    </div>
+    <div class="mb-3">
+      <label for="organizerEmail" class="form-label">Organizer Email:</label>
+      <input type="email" class="form-control" id="organizerEmail" name="organizerEmail" required>
+    </div>
+
+
+    <div class="button-group">
+      <button type="submit" class="btn btn-primary">Submit Event</button>
+      <button type="reset" class="btn btn-danger">Reset Form</button>
+    </div>
+  </form>
+</div>
+
+
+<footer>
+  <small>&copy; Group 4 Production</small>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>

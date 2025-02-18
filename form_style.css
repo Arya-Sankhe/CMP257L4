@@ -1,0 +1,98 @@
+body {
+    background-color: white;
+    font-family: "Helvetica", "Arial", sans-serif;
+    padding: 20px;
+  }
+ 
+  header {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+ 
+  header h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+ 
+  form {
+    background-color: lightblue;
+    border: 2px solid grey;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+ 
+  /* Form labels and input */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+    font-size: 1.1em;
+  }
+ 
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+ 
+  textarea {
+    height: 100px;
+    resize: vertical;
+  }
+ 
+  /* Radio group and Checkbox group */
+  .radio-group, .checkbox-group {
+    display: flex;
+    align-content: center;
+    padding: 10px;
+  }
+
+
+  /* Dropdown styling */
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+ 
+  /* Button Group */
+  .button-group {
+    display: flex;
+    gap: 10px;
+  }
+ 
+  .button-group button {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+ 
+  footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+  }
+ 
+
+
+ 
+  footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+  }
